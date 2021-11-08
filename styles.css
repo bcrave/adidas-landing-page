@@ -43,7 +43,7 @@ header {
 
 .athlete-mobile {
   height: 300px;
-  background-image: url(./assets/Bitmap.png);
+  background-image: url(./assets/mobile-shoes.webp);
   background-size: cover;
   background-position: center;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 .we-are {
-  color: #cd3a24;
+  color: #2f80ed;
   font-weight: 400;
 }
 .coming-soon {
@@ -113,40 +113,50 @@ input[type="email"] {
   font-size: 14px;
   border-radius: 3px;
 }
-input[type="submit"] {
+button[type="submit"] {
   width: 25%;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: #333;
+  background: linear-gradient(
+    159deg,
+    rgba(124, 124, 124, 1) 0%,
+    rgba(51, 51, 51, 1) 100%
+  );
   color: #fff;
   cursor: pointer;
+  border: none;
+  outline: none;
 
   font-size: 18px;
   font-weight: 600;
 }
 
+button[type="submit"] i {
+  font-size: 18px;
+}
+
 .container-right {
   display: none;
-  width: 50%;
+  width: 40%;
 }
 .athlete-desktop {
   height: 100%;
-  background-image: url(./assets/athlete-big.png);
+  background-image: url(./assets/shoes.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
 }
 
 @media (min-width: 768px) {
   .container {
-    background-image: url("./assets/destop-bg.webp");
+    background-image: url("./assets/waves-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .container-left {
-    max-width: 50%;
+    max-width: 60%;
   }
   header {
     justify-content: flex-start;
