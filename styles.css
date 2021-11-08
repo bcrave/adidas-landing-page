@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "AdiHaus";
+  src: URL("https://assets.codepen.io/6060109/adihaus_regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.container-left {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#logo {
+  width: 75px;
+  margin: 20px 0;
+}
+
+.athlete-mobile {
+  height: 300px;
+  background-image: url(./assets/Bitmap.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.hero-text {
+  font-size: 48px;
+  font-family: AdiHaus;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 430px;
+}
+.hero-text h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero-text p {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  line-height: 32px;
+  margin: 0;
+}
+
+.we-are {
+  color: #cd3a24;
+  font-weight: 400;
+}
+.coming-soon {
+  color: #423a3a;
+  font-weight: 700;
+}
+.form {
+  width: 100%;
+}
+
+form {
+  display: flex;
+}
+
+.input-wrapper {
+  height: 48px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+input {
+  border: none;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+input[type="email"] {
+  width: 75%;
+  padding: 10px 25px;
+  color: #828282;
+  font-size: 14px;
+  border-radius: 3px;
+}
+input[type="submit"] {
+  width: 25%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container-right {
+  display: none;
+  width: 50%;
+}
+.athlete-desktop {
+  height: 100%;
+  background-image: url(./assets/athlete-big.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-image: url("./assets/destop-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .container-left {
+    max-width: 50%;
+  }
+  header {
+    justify-content: flex-start;
+    margin-bottom: 75px;
+  }
+  .athlete-mobile {
+    display: none;
+  }
+  .hero-text {
+    text-align: start;
+  }
+  .hero-text h1 {
+    text-align: start;
+    font-size: 64px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .container-right {
+    display: block;
+  }
+}
